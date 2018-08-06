@@ -63,6 +63,38 @@ export default new Router({
 })
 
 export const asyncRouterMap = [
+  // {
+  //   path: '/ad',
+  //   component: Layout,
+  //   redirect: '/ad/components/yong/yong',
+  //   name: 'ad',
+  //   meta: {
+  //     title: '用户权限管理',
+  //     icon: 'component'
+  //   },
+  //   children: [
+  //     {
+  //       path: '/ad/components',
+  //       component: _import('ad/components/yong/yong'),
+  //       redirect: '/ad/components/yong/yong',
+  //       name: 'haomo-components',
+  //       meta: {
+  //         title: '用户管理',
+  //         icon: 'component'
+  //       }
+  //     },
+  //     {
+  //       path: '/ad/components',
+  //       component: _import('ad/components/yong/yong'),
+  //       redirect: '/ad/components/yong/yong',
+  //       name: 'haomo-components',
+  //       meta: {
+  //         title: '菜单管理',
+  //         icon: 'component'
+  //       }
+  //     }
+  //   ]
+  // },
   {
     path: '/haomo',
     component: Layout,
@@ -83,6 +115,16 @@ export const asyncRouterMap = [
           icon: 'component'
         },
         children: [
+          {
+            path: 'yong',
+            component: _import('haomo/components/yong/index'),
+            edirect: '/haomo/components/yong',
+            name: 'haomo-yong',
+            meta: {
+              title: '用户管理',
+              icon: 'component'
+            }
+          },
           {
             path: 'table',
             component: _import('haomo/components/tables/index'),
@@ -302,7 +344,6 @@ export const asyncRouterMap = [
   {
     path: '/form',
     component: Layout,
-    redirect: 'noredirect',
     name: 'form',
     meta: {
       title: 'form',

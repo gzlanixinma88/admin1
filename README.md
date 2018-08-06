@@ -19,7 +19,6 @@
 * [Vue-Awesome](https://github.com/Justineo/vue-awesome)
 
 ## 使用
-
 请使用node > 6.10
 
 ### 安装
