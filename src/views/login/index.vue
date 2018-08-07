@@ -11,7 +11,6 @@
         </span>
         <el-input name="username" type="text" v-model="loginForm.username" autoComplete="on" placeholder="username" />
       </el-form-item>
-
       <el-form-item prop="password">
         <span class="svg-container">
           <svg-icon icon-class="password" />
@@ -73,7 +72,7 @@ export default {
     return {
       loginForm: {
         username: 'admin',
-        password: '1111111'
+        password: '1111'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
